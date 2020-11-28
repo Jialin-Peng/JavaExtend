@@ -3,6 +3,7 @@ package 查看字符出现次数;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class Demo {
 
@@ -14,7 +15,8 @@ public class Demo {
 		Scanner sc=new Scanner(System.in);
 		String s=sc.nextLine();
 		//创建map集合
-		Map<Character,Integer> map=new HashMap<Character,Integer>();
+		//Map<Character,Integer> map=new HashMap<Character,Integer>();  无序输出
+		Map<Character,Integer> map=new TreeMap<Character,Integer>();  //有序输出
 		/*
 			将字符存入map集合，并判断
 			如果集合中不存在该字符，则在该集合中存入该字符
